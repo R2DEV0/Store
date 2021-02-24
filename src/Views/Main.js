@@ -7,14 +7,14 @@ import '../Main.css';
 
 export default () =>{
     const [isOpen, setIsOpen] = useState(false);
-    const [home, setHome] = useState(false);
+    const [home, setHome] = useState(true);
     const [modal, setModal] = useState(false);
     const [modal2, setModal2] = useState(false);
     const [order, setOrder] = useState(false);
     const [small, setSmall] = useState(false);
     const [large, setLarge] = useState(false);
     const [userInfo, setUserInfo] = useState(false);
-    const [orderCompleted, setOrderCompleted] = useState(true)
+    const [orderCompleted, setOrderCompleted] = useState(false)
 
     const placeNewOrder = () =>{
         setOrder(true);
