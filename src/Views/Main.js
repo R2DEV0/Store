@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {Collapse,Navbar,NavbarToggler,NavbarBrand,Nav,NavItem,NavLink,NavbarText,Button, Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap'
 import apple from './apple.png';
 import produce from './food.png';
+import heart from './heart.png';
 import '../Main.css';
 
 
@@ -109,15 +110,17 @@ export default () =>{
                         <h2>Welcome to the Fresh Grocery Store Online Delivery Application</h2>
                         <h5>Why go to the store when the store can come to you!</h5>
                     </div>
-                    <div className="col-sm-10 offset-1 homeInfo mt-5">
+                    <div className='hearts'>
+                        <img src={heart} alt="food hearts" height="150px" className='mt-3'/>
+                    </div>
+                    <div className="col-sm-10 offset-1 homeInfo mt-4">
                         <p style={{fontSize: '20px'}}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                             Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce. 
-                            Dictumst quisque sagittis purus sit. Sed pulvinar proin gravida hendrerit lectus a. Risus sed vulputate odio ut enim blandit volutpat. 
+                            Dictumst quisque sagittis purus sit. Sed pulvinar proin gravida hendrerit lectus a. Risus sed vulputate odio ut enim blandit volutpat.
+                            </p>
+                            <p style={{fontSize: '20px'}}>
                             At in tellus integer feugiat scelerisque varius. Amet venenatis urna cursus eget nunc. Ipsum dolor sit amet consectetur adipiscing elit duis tristique sollicitudin. 
-                            Et netus et malesuada fames ac turpis egestas. Varius vel pharetra vel turpis nunc eget lorem. Etiam dignissim diam quis enim lobortis scelerisque. 
-                            Duis ultricies lacus sed turpis tincidunt id aliquet risus. Suspendisse ultrices gravida dictum fusce. Metus vulputate eu scelerisque felis imperdiet. 
-                            Diam vel quam elementum pulvinar. Blandit aliquam etiam erat velit scelerisque. Sed elementum tempus egestas sed sed risus pretium.
                         </p>
                     </div>
                     <div className='text-center placeOrder mt-5'>
@@ -155,55 +158,79 @@ export default () =>{
                             <div className='text-center mt-2 items'>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
-                                    <p>Food Item Description</p>
+                                    <p>Food Item Description<br/>
+                                        $5.00
+                                    </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
-                                    <p>Food Item Description</p>
+                                    <p>Food Item Description<br/>
+                                        $4.00
+                                    </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
-                                    <p>Food Item Description</p>
+                                    <p>Food Item Description<br/>
+                                        $3.50
+                                    </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
-                                    <p>Food Item Description</p>
-                                </div>
-                            </div>
-                            <div className='text-center mt-2 items'>
-                                <div>
-                                    <img src={produce} alt="food_item" height='150px' className='item'/>
-                                    <p>Food Item Description</p>
-                                </div>
-                                <div>
-                                    <img src={produce} alt="food_item" height='150px' className='item'/>
-                                    <p>Food Item Description</p>
-                                </div>
-                                <div>
-                                    <img src={produce} alt="food_item" height='150px' className='item'/>
-                                    <p>Food Item Description</p>
-                                </div>
-                                <div>
-                                    <img src={produce} alt="food_item" height='150px' className='item'/>
-                                    <p>Food Item Description</p>
+                                    <p>Food Item Description<br/>
+                                        $1.00
+                                    </p>
                                 </div>
                             </div>
                             <div className='text-center mt-2 items'>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
-                                    <p>Food Item Description</p>
+                                    <p>Food Item Description<br/>
+                                        $4.50
+                                    </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
-                                    <p>Food Item Description</p>
+                                    <p>Food Item Description<br/>
+                                        $3.00
+                                    </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
-                                    <p>Food Item Description</p>
+                                    <p>Food Item Description<br/>
+                                        $5.00
+                                    </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
-                                    <p>Food Item Description</p>
+                                    <p>Food Item Description<br/>
+                                        $3.75
+                                    </p>
+                                </div>
+                            </div>
+                            <div className='text-center mt-2 items'>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description<br/>
+                                        $4.00
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description<br/>
+                                        $3.50
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description<br/>
+                                        $5.00
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description<br/>
+                                        $1.00
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -221,55 +248,79 @@ export default () =>{
                             <div className='text-center mt-2 items'>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
-                                    <p>Food Item Description</p>
+                                    <p>Food Item Description<br/>
+                                        $1.00
+                                    </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
-                                    <p>Food Item Description</p>
+                                    <p>Food Item Description<br/>
+                                        $5.00
+                                    </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
-                                    <p>Food Item Description</p>
+                                    <p>Food Item Description<br/>
+                                        $4.50
+                                    </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
-                                    <p>Food Item Description</p>
-                                </div>
-                            </div>
-                            <div className='text-center mt-2 items'>
-                                <div>
-                                    <img src={produce} alt="food_item" height='150px' className='item'/>
-                                    <p>Food Item Description</p>
-                                </div>
-                                <div>
-                                    <img src={produce} alt="food_item" height='150px' className='item'/>
-                                    <p>Food Item Description</p>
-                                </div>
-                                <div>
-                                    <img src={produce} alt="food_item" height='150px' className='item'/>
-                                    <p>Food Item Description</p>
-                                </div>
-                                <div>
-                                    <img src={produce} alt="food_item" height='150px' className='item'/>
-                                    <p>Food Item Description</p>
+                                    <p>Food Item Description<br/>
+                                        $4.00
+                                    </p>
                                 </div>
                             </div>
                             <div className='text-center mt-2 items'>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
-                                    <p>Food Item Description</p>
+                                    <p>Food Item Description<br/>
+                                        $3.25
+                                    </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
-                                    <p>Food Item Description</p>
+                                    <p>Food Item Description<br/>
+                                        $4.50
+                                    </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
-                                    <p>Food Item Description</p>
+                                    <p>Food Item Description<br/>
+                                        $5.00
+                                    </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
-                                    <p>Food Item Description</p>
+                                    <p>Food Item Description<br/>
+                                        $4.75
+                                    </p>
+                                </div>
+                            </div>
+                            <div className='text-center mt-2 items'>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description<br/>
+                                        $2.00
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description<br/>
+                                        $2.75
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description<br/>
+                                        $3.50
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description<br/>
+                                        $5.00
+                                    </p>
                                 </div>
                             </div>
                         </div>

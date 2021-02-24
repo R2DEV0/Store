@@ -7,13 +7,18 @@
         text-align: center;
         margin-top: 5%;
         color:black;
-        background-color: #fafafafa;
     }
 
 .item{
     border: 1px dotted gray;
     margin: 10px;
     padding: 10px;
+}
+
+.item:hover{
+    cursor: pointer;
+    border: 1px solid black;
+    box-shadow: 2px 2px 3px lightgray;
 }
 
 .items{
