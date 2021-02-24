@@ -137,9 +137,9 @@ export default () =>{
                         </div>
                         <hr/>
                         <div className='disc mt-5'>
-                            <h5>Small Box = Consist of 7 items of your choosing</h5>
+                            <h5>Small Box = Consists of 7 items of your choosing</h5>
                             <br/>
-                            <h5>Large Box = Consist of 10 items of your choosing</h5>
+                            <h5>Large Box = Consists of 10 items of your choosing</h5>
                         </div>
                     </div>
                 </div>
@@ -152,23 +152,59 @@ export default () =>{
                         <h3>Select Up to 7 Items Then Click: <button className='btn btn-primary btn-lg' onClick={submitOrder}>Submit Order</button></h3>
                         <button className='btn btn-info mt-3' onClick={() => setModal2(!modal2)}>Add Meats or Dairy to Order</button>
                         <div className='selections text-center'>
-                            <div className='flex text-center mt-2'>
-                                <img src={produce} alt="food_item" height='150px' className='item'/>
-                                <img src={produce} alt="food_item" height='150px' className='item'/>
-                                <img src={produce} alt="food_item" height='150px' className='item'/>
-                                <img src={produce} alt="food_item" height='150px' className='item'/>
+                            <div className='text-center mt-2 items'>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description</p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description</p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description</p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description</p>
+                                </div>
                             </div>
-                            <div className='flex text-center mt-5'>
-                                <img src={produce} alt="food_item" height='150px' className='item'/>
-                                <img src={produce} alt="food_item" height='150px' className='item'/>
-                                <img src={produce} alt="food_item" height='150px' className='item'/>
-                                <img src={produce} alt="food_item" height='150px' className='item'/>
+                            <div className='text-center mt-2 items'>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description</p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description</p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description</p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description</p>
+                                </div>
                             </div>
-                            <div className='flex text-center mt-5'>
-                                <img src={produce} alt="food_item" height='150px' className='item'/>
-                                <img src={produce} alt="food_item" height='150px' className='item'/>
-                                <img src={produce} alt="food_item" height='150px' className='item'/>
-                                <img src={produce} alt="food_item" height='150px' className='item'/>
+                            <div className='text-center mt-2 items'>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description</p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description</p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description</p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -182,23 +218,59 @@ export default () =>{
                         <h3>Select Up to 10 Items Then Click: <button className='btn btn-primary btn-lg' onClick={submitOrder}>Submit Order</button></h3>
                         <button className='btn btn-info mt-3' onClick={() => setModal2(!modal2)}>Add Meats or Dairy to Order</button>
                         <div className='selections text-center'>
-                            <div className='flex text-center mt-5'>
-                                <img src={produce} alt="food_item" height='150px' className='item'/>
-                                <img src={produce} alt="food_item" height='150px' className='item'/>
-                                <img src={produce} alt="food_item" height='150px' className='item'/>
-                                <img src={produce} alt="food_item" height='150px' className='item'/>
+                            <div className='text-center mt-2 items'>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description</p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description</p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description</p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description</p>
+                                </div>
                             </div>
-                            <div className='flex text-center mt-5'>
-                                <img src={produce} alt="food_item" height='150px' className='item'/>
-                                <img src={produce} alt="food_item" height='150px' className='item'/>
-                                <img src={produce} alt="food_item" height='150px' className='item'/>
-                                <img src={produce} alt="food_item" height='150px' className='item'/>
+                            <div className='text-center mt-2 items'>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description</p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description</p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description</p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description</p>
+                                </div>
                             </div>
-                            <div className='flex text-center mt-5'>
-                                <img src={produce} alt="food_item" height='150px' className='item'/>
-                                <img src={produce} alt="food_item" height='150px' className='item'/>
-                                <img src={produce} alt="food_item" height='150px' className='item'/>
-                                <img src={produce} alt="food_item" height='150px' className='item'/>
+                            <div className='text-center mt-2 items'>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description</p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description</p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description</p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description</p>
+                                </div>
                             </div>
                         </div>
                     </div>
