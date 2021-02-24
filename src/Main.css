@@ -1,0 +1,17 @@
+.home, .placeOrder, .userInfo {
+    background-color: #fafafafa;
+    padding-bottom: 10px;
+}
+
+    .page-footer{
+        text-align: center;
+        margin-top: 5%;
+        color:black;
+        background-color: #fafafafa;
+    }
+
+.item{
+    border: 1px dotted gray;
+    margin: 10px;
+    padding: 10px;
+}
