@@ -113,14 +113,15 @@ export default () =>{
                     <div className='hearts'>
                         <img src={heart} alt="food hearts" height="150px" className='mt-3'/>
                     </div>
-                    <div className="col-sm-10 offset-1 homeInfo mt-4">
-                        <p style={{fontSize: '20px'}}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce. 
-                            Dictumst quisque sagittis purus sit. Sed pulvinar proin gravida hendrerit lectus a. Risus sed vulputate odio ut enim blandit volutpat.
+                    <div className="col-sm-10 offset-sm-1 text-center homeInfo mt-4">
+                        <p style={{fontSize: '20px'}} className='text-center'>
+                            This is the high-fidelity prototype of our grocery store application. The user can interact with the tabs within the top navigation bar and click on the 'About Us' tab 
+                            to view more about us and our story. The user can also place an order from the navigation bar as well. From anywhere in the application, the user can always go to the homepage by selecting 'Home'.
+                            The large green button below these paragraphs can also be clicked on to start a new order.
                             </p>
-                            <p style={{fontSize: '20px'}}>
-                            At in tellus integer feugiat scelerisque varius. Amet venenatis urna cursus eget nunc. Ipsum dolor sit amet consectetur adipiscing elit duis tristique sollicitudin. 
+                            <p style={{fontSize: '20px'}} className='text-center'>
+                            Start an order by clicking the button below. Next, select the order size you would like to make. After that, you will be directed to our available items. 
+                            Select what you would like delivered to your address and click submit. You will then need to enter your infromation and that is it! 
                         </p>
                     </div>
                     <div className='text-center placeOrder mt-5'>
@@ -370,8 +371,14 @@ export default () =>{
                 <Modal isOpen={modal} toggle={() => setModal(!modal)}>
                     <ModalHeader toggle={() => setModal(!modal)}>Our Story</ModalHeader>
                         <ModalBody>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div className='text-center' style={{fontWeight:'bold'}}>
+                            <p>Online Grocery Store Delivery Service<br/>
+                            CS 302: Human Computer Interaction <br/>
+                            Winter 2021 </p>
+                            <p>Instructor: Deanne Larson<br/>
+                            City University of Seattle<br/>
+                            Matthew Lynch - Kevin Chancey - Kiran Limbu </p>
+                        </div>
                         </ModalBody>
                     <ModalFooter>
                         <Button color="secondary" onClick={() => setModal(!modal)}>Close</Button>
