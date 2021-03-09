@@ -11,6 +11,7 @@ export default () =>{
     const [home, setHome] = useState(true);
     const [modal, setModal] = useState(false);
     const [modal2, setModal2] = useState(false);
+    const [modal3, setModal3] = useState(false);
     const [order, setOrder] = useState(false);
     const [small, setSmall] = useState(false);
     const [large, setLarge] = useState(false);
@@ -68,6 +69,7 @@ export default () =>{
         setSmall(false);
         setLarge(false);
         setUserInfo(false);
+        setModal3(false);
         setOrderCompleted(true);
     }
 
@@ -115,7 +117,7 @@ export default () =>{
                     </div>
                     <div className="col-sm-10 offset-sm-1 text-center homeInfo mt-4">
                         <p style={{fontSize: '20px'}} className='text-center'>
-                            This is the high-fidelity prototype of our grocery store application. The user can interact with the tabs within the top navigation bar and click on the 'About Us' tab 
+                            This is the high-fidelity prototype/Final design of our grocery store application. <br/> The user can interact with the tabs within the top navigation bar and click on the 'About Us' tab 
                             to view more about us and our story. The user can also place an order from the navigation bar as well. From anywhere in the application, the user can always go to the homepage by selecting 'Home'.
                             The large green button below these paragraphs can also be clicked on to start a new order.
                             </p>
@@ -154,31 +156,41 @@ export default () =>{
                     <div className='smallOrder mt-5 text-center'>
                         <h3>Small Order</h3>
                         <h3>Select Up to 7 Items Then Click: <button className='btn btn-primary btn-lg' onClick={submitOrder}>Submit Order</button></h3>
-                        <button className='btn btn-info mt-3' onClick={() => setModal2(!modal2)}>Add Meats or Dairy to Order</button>
-                        <div className='selections text-center'>
+                        <button className='btn btn-info mt-3' onClick={() => setModal2(!modal2)}>Need Help?</button>
+                        <div className='selections text-center mt-5'>
+                        {/* Produce */}
+                            <h3 className='selectTitle' id='p'>Fresh Produce</h3>
                             <div className='text-center mt-2 items'>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
                                     <p>Food Item Description<br/>
-                                        $5.00
+                                        $5.00<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
                                     </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
                                     <p>Food Item Description<br/>
-                                        $4.00
+                                        $4.00<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
                                     </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
                                     <p>Food Item Description<br/>
-                                        $3.50
+                                        $3.50<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
                                     </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
                                     <p>Food Item Description<br/>
-                                        $1.00
+                                        $1.00<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
                                     </p>
                                 </div>
                             </div>
@@ -186,25 +198,69 @@ export default () =>{
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
                                     <p>Food Item Description<br/>
-                                        $4.50
+                                        $4.50<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
                                     </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
                                     <p>Food Item Description<br/>
-                                        $3.00
+                                        $3.00<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
                                     </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
                                     <p>Food Item Description<br/>
-                                        $5.00
+                                        $5.00<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
                                     </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
                                     <p>Food Item Description<br/>
-                                        $3.75
+                                        $3.75<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
+                                    </p>
+                                </div>
+                            </div>
+                        {/* Meat */}
+                            <h3 className='selectTitle mt-4' id='m'>Meat Products</h3>
+                            <div className='text-center mt-2 items'>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description<br/>
+                                        $4.00<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description<br/>
+                                        $3.50<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description<br/>
+                                        $5.00<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description<br/>
+                                        $1.00<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
                                     </p>
                                 </div>
                             </div>
@@ -212,25 +268,69 @@ export default () =>{
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
                                     <p>Food Item Description<br/>
-                                        $4.00
+                                        $4.00<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
                                     </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
                                     <p>Food Item Description<br/>
-                                        $3.50
+                                        $3.50<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
                                     </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
                                     <p>Food Item Description<br/>
-                                        $5.00
+                                        $5.00<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
                                     </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
                                     <p>Food Item Description<br/>
-                                        $1.00
+                                        $1.00<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
+                                    </p>
+                                </div>
+                            </div>
+                        {/* Dairy */}
+                            <h3 className='selectTitle mt-4'>Dairy Products</h3>
+                            <div className='text-center mt-2 items'>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description<br/>
+                                        $4.00<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description<br/>
+                                        $3.50<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description<br/>
+                                        $5.00<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description<br/>
+                                        $1.00<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
                                     </p>
                                 </div>
                             </div>
@@ -244,31 +344,41 @@ export default () =>{
                     <div className='largeOrder mt-5 text-center'>
                         <h3>Large Order</h3>
                         <h3>Select Up to 10 Items Then Click: <button className='btn btn-primary btn-lg' onClick={submitOrder}>Submit Order</button></h3>
-                        <button className='btn btn-info mt-3' onClick={() => setModal2(!modal2)}>Add Meats or Dairy to Order</button>
-                        <div className='selections text-center'>
+                        <button className='btn btn-info mt-3' onClick={() => setModal2(!modal2)}>Need Help?</button>
+                        <div className='selections text-center mt-5'>
+                        {/* Produce */}
+                            <h3 className='selectTitle' id='p'>Fresh Produce</h3>
                             <div className='text-center mt-2 items'>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
                                     <p>Food Item Description<br/>
-                                        $1.00
+                                        $5.00<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
                                     </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
                                     <p>Food Item Description<br/>
-                                        $5.00
+                                        $4.00<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
                                     </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
                                     <p>Food Item Description<br/>
-                                        $4.50
+                                        $3.50<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
                                     </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
                                     <p>Food Item Description<br/>
-                                        $4.00
+                                        $1.00<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
                                     </p>
                                 </div>
                             </div>
@@ -276,25 +386,69 @@ export default () =>{
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
                                     <p>Food Item Description<br/>
-                                        $3.25
+                                        $4.50<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
                                     </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
                                     <p>Food Item Description<br/>
-                                        $4.50
+                                        $3.00<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
                                     </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
                                     <p>Food Item Description<br/>
-                                        $5.00
+                                        $5.00<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
                                     </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
                                     <p>Food Item Description<br/>
-                                        $4.75
+                                        $3.75<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
+                                    </p>
+                                </div>
+                            </div>
+                        {/* Meat */}
+                            <h3 className='selectTitle mt-4' id='m'>Meat Products</h3>
+                            <div className='text-center mt-2 items'>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description<br/>
+                                        $4.00<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description<br/>
+                                        $3.50<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description<br/>
+                                        $5.00<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description<br/>
+                                        $1.00<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
                                     </p>
                                 </div>
                             </div>
@@ -302,25 +456,69 @@ export default () =>{
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
                                     <p>Food Item Description<br/>
-                                        $2.00
+                                        $4.00<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
                                     </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
                                     <p>Food Item Description<br/>
-                                        $2.75
+                                        $3.50<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
                                     </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
                                     <p>Food Item Description<br/>
-                                        $3.50
+                                        $5.00<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
                                     </p>
                                 </div>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
                                     <p>Food Item Description<br/>
-                                        $5.00
+                                        $1.00<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
+                                    </p>
+                                </div>
+                            </div>
+                        {/* Dairy */}
+                            <h3 className='selectTitle mt-4'>Dairy Products</h3>
+                            <div className='text-center mt-2 items'>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description<br/>
+                                        $4.00<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description<br/>
+                                        $3.50<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description<br/>
+                                        $5.00<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src={produce} alt="food_item" height='150px' className='item'/>
+                                    <p>Food Item Description<br/>
+                                        $1.00<br/>
+                                        <label htmlFor="quant" className='mr-2'>Quantity: </label> 
+                                        <input type="number" name='quant' className='col-sm-3'/>
                                     </p>
                                 </div>
                             </div>
@@ -340,9 +538,11 @@ export default () =>{
                                 <input type="text" placeholder='Phone Number' className='form-control mt-3'/>
                                 <textarea placeholder='Delivery Address' className='form-control mt-3'/>
                             </div>
-                            <button className='btn btn-primary btn-lg mt-5' onClick={orderPlaced}>Place Order</button>
                         </form>
-                        <h5 className='mt-5'>Please Note That Someone Will Contact You to Confirm and Arrange Payment For Your Order</h5>
+                        <button className='btn btn-primary btn-lg mt-5 mr-2' onClick={orderPlaced}>Pay With Cash On Delivery</button>
+                        <button className='btn btn-success btn-lg mt-5' onClick={()=>{setModal3(!modal3)}}>Pay Now Online</button> <br/>
+                        <button className='btn btn-danger btn-lg mt-2' onClick={smallSelected}>Go Back</button>
+                        <h5 className='mt-5'>* Please Note That Someone Will Contact You to Confirm and Arrange Payment For Your Order if you choose to pay with cash *</h5>
                     </div>
                 </div>
             }
@@ -352,7 +552,9 @@ export default () =>{
                     <div className='mt-5 text-center'>
                         <h1>Great! Your Order Was Placed Successfully!</h1>
                         <br/>
-                        <h4>Someone Will Be in Contact With You Shortly</h4>
+                        <h4>We Will Be in Contact With You Shortly</h4>
+                        <br/>
+                        <h4>You Should Have an Email Receipt of Your Order</h4>
                         <br/>
                         <button className='btn btn-success btn-lg mt-5' onClick={goHome}>Return Home</button>
                     </div>
@@ -389,13 +591,36 @@ export default () =>{
         {/* Meat/Dairy Modal */}
             <div>
                 <Modal isOpen={modal2} toggle={() => setModal2(!modal2)}>
-                    <ModalHeader toggle={() => setModal(!modal2)}>Select From Our Available Meats & Dairy Items</ModalHeader>
-                        <ModalBody className='text-center mt-5 mb-5'>
-                            <h5>This would show available meats and dairy items available in your local area to be added to your order</h5>
-                            <button className='btn btn-info mt-5' onClick={() => setModal2(!modal2)}>Add Selected Items</button>
+                    <ModalHeader toggle={() => setModal2(!modal2)}>Help!</ModalHeader>
+                        <ModalBody className='text-left mt-5 mb-5'>
+                            <ul>
+                                <li className='list'>Our items are ordered in 3 sections: Produce, Meat, and Dairy on this page</li>
+                                <li className='list mt-2'> Click on an item to add it to your box order </li>
+                                <li className='list mt-2'> Click on the same item again to remove it from your order </li>
+                                <li className='list mt-2'> Once you are satisfied with your selections, click 'Submit Order' to continue </li>
+                                <li className='list mt-2'> You can always come back to this page if you forgot something </li>
+                            </ul>
                         </ModalBody>
                     <ModalFooter>
-                        <Button color="secondary" onClick={() => setModal2(!modal2)}>Close</Button>
+                        <Button color="danger" onClick={() => setModal2(!modal2)}>Close</Button>
+                    </ModalFooter>
+                </Modal>
+            </div>
+
+            {/* CC / PayPal Modal */}
+            <div>
+                <Modal isOpen={modal3} toggle={() => setModal3(!modal3)}>
+                    <ModalHeader toggle={() => setModal3(!modal3)}>Pay by Credit Card or PayPal</ModalHeader>
+                        <ModalBody className='text-left mt-2 mb-3'>
+                            <input type="text" className='form-control' placeholder='Card Holder Name'/>
+                            <input type="number" className='form-control mt-2' placeholder='Credit Card Number'/>
+                            <input type="date" className='form-control mt-2' placeholder='Expiration Date'/>
+                            <input type="number" className='form-control mt-2' placeholder='CVV Number'/>
+                            <button className='btn btn-success mt-3 mr-3' onClick={orderPlaced}>Submit Card Payment</button>
+                            <button className='btn btn-primary mt-3'>Pay With PayPal</button>
+                        </ModalBody>
+                    <ModalFooter>
+                        <Button color="danger" onClick={() => setModal3(false)}>Go Back</Button>
                     </ModalFooter>
                 </Modal>
             </div>

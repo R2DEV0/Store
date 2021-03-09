@@ -25,3 +25,22 @@
     display: flex;
     justify-content: center;
 }
+
+.list{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.selectTitle{
+    background-color: aqua;
+    border-radius: 5px;
+    border: 1px solid lightseagreen;
+}
+
+#p{
+    background-color: rgba(55, 219, 50, 0.829);
+}
+
+#m{
+    background-color: rgba(223, 140, 140, 0.781);
+}
