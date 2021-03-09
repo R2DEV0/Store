@@ -159,7 +159,7 @@ export default () =>{
                         <button className='btn btn-info mt-3' onClick={() => setModal2(!modal2)}>Need Help?</button>
                         <div className='selections text-center mt-5'>
                         {/* Produce */}
-                            <h3 className='selectTitle' id='p'>Fresh Produce</h3>
+                            <h3 className='col-12 selectTitle' id='p'>Fresh Produce</h3>
                             <div className='text-center mt-2 items'>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
@@ -229,7 +229,7 @@ export default () =>{
                                 </div>
                             </div>
                         {/* Meat */}
-                            <h3 className='selectTitle mt-4' id='m'>Meat Products</h3>
+                            <h3 className='col-12 selectTitle mt-4' id='m'>Meat Products</h3>
                             <div className='text-center mt-2 items'>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
@@ -299,7 +299,7 @@ export default () =>{
                                 </div>
                             </div>
                         {/* Dairy */}
-                            <h3 className='selectTitle mt-4'>Dairy Products</h3>
+                            <h3 className='col-12 selectTitle mt-4'>Dairy Products</h3>
                             <div className='text-center mt-2 items'>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
@@ -347,7 +347,7 @@ export default () =>{
                         <button className='btn btn-info mt-3' onClick={() => setModal2(!modal2)}>Need Help?</button>
                         <div className='selections text-center mt-5'>
                         {/* Produce */}
-                            <h3 className='selectTitle' id='p'>Fresh Produce</h3>
+                            <h3 className='col-12 selectTitle' id='p'>Fresh Produce</h3>
                             <div className='text-center mt-2 items'>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
@@ -417,7 +417,7 @@ export default () =>{
                                 </div>
                             </div>
                         {/* Meat */}
-                            <h3 className='selectTitle mt-4' id='m'>Meat Products</h3>
+                            <h3 className='col-12 selectTitle mt-4' id='m'>Meat Products</h3>
                             <div className='text-center mt-2 items'>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
@@ -487,7 +487,7 @@ export default () =>{
                                 </div>
                             </div>
                         {/* Dairy */}
-                            <h3 className='selectTitle mt-4'>Dairy Products</h3>
+                            <h3 className='col-12 selectTitle mt-4'>Dairy Products</h3>
                             <div className='text-center mt-2 items'>
                                 <div>
                                     <img src={produce} alt="food_item" height='150px' className='item'/>
